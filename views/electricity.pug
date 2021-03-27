@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  - var result=[{type:"water",status:"on",watts:22220},{type:"wind",status:"on",watts:11220},{type:"coal",status:"on",watts:15220}] 
+  div(class="container-fluid")
+   div(class="row")
+    each form in result 
+     div(class="col-sm-2") source: #{form.type} - type: #{form.status} - watts: #{form.watts}
