@@ -5,7 +5,7 @@ block content
  p rows:#{query.rows} , columns:#{query.cols}
  - var rows=Number(query.rows)
  - var cols=Number(query.cols)
- if !(Number.isInteger(rows)) ||  !(Number.isInteger(rows))
+ if !(Number.isInteger(rows)) ||  !(Number.isInteger(cols))
   p given parameter values are not integers 
  else if rows > 4
   p rows value should be less than 4
